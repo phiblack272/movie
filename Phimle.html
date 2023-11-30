@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>dảk movie</title>
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand static-top filmeson-nav sticky-top">
+    <!-- <button style="margin-left:10px;" class="btn btn-link btn-sm text-secondary order-2 order-sm-0" id="sidebarToggle">
+      <i class="fas fa-bars"></i>
+    </button> -->
+    <a class="navbar-brand mr-1" style="margin-left:10px;" href="index.html">FHD</a>
+    <!-- Navbar Search -->
+    <form id="form" class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 filmeson-navbar-search">
+      <div class="input-group">
+        <input type="text" id="search" class="form-control" placeholder="Bạn muốn tìm gì...">
+      
+      </div>
+    </form>
+  </nav>
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav">
+      <li class="nav-item " >
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-home"></i>
+          <span >Trang chủ</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Phimle.html" >
+          <i class="fas fa-fw fa-film"></i>
+          <span  class="active" >Phim lẻ</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Phimbo.html">
+          <i class="fas fa-fw fa-desktop"></i>
+          <span>Phim bộ</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Hoathinh.html">
+          <i class="fas fa-fw fa-trophy"></i>
+          <span>Phim hoạt hình</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Ngaunhien.html">
+          <i class="fas fa-fw fa-random"></i>
+          <span>Ngẫu nhiên</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">
+          <i class="fas fa-fw fa-heart"></i>
+          <span>Yêu thích</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <div id="banner">
+          
+          <div id="banner__contents">
+            <h1 id="banner__title"></h1>
+            <div id="banner__buttons">
+            <a href="#" id="banner__button" onclick="play()" target="blank">Play</a>
+            
+          </div>
+          <p id="banner__description"> </p>
+          </div>
+          <div id="banner__fadeBottom"></div>
+        </div>
+      </li>
+    </ul>
+    
+    <div id="content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 top-mobile-search">
+            <div class="form-group">
+              <!--<label for="e3">Genre</label>-->
+              <input type="text" placeholder="Search for..." class="form-control search" id="search">
+            </div>
+          </div>
+          
+        <div id="tags" >
+          <div class="tag">123</div>
+          <div class="tag">222</div>
+          <div class="tag">333</div>
+          <div class="tag">444</div>
+        </div>
+        <br>
+        <div class="video-block section-padding">
+          <div class="row" id="porco">
+
+          </div>
+          <!-- <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center pagination-sm mb-0">
+              <li class="page-item disabled">
+                <a tabindex="-1" href="#" class="page-link">Previous</a>
+              </li>
+              <li class="page-item active"><a href="#" class="page-link">1</a></li>
+              <li class="page-item"><a href="#" class="page-link">2</a></li>
+              <li class="page-item"><a href="#" class="page-link">3</a></li>
+              <li class="page-item">
+                <a href="#" class="page-link">Next</a>
+              </li>
+            </ul>
+          </nav> -->
+          <div class="pagination">
+            <div class="page" id="prev">Trở về</div>
+            <div class="current" id="current">1</div>
+            <div class="page" id="next">Tiếp theo</div>
+    
+        </div>
+        </div>
+
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content-wrapper -->
+  </div>
+      <script src="./js/phimle.js"></script>
+      <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://johannburkard.de/resources/Johann/jquery.highlight-4.js"></script>
+</body>
+</html>
